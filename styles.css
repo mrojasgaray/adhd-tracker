@@ -33,31 +33,159 @@ h1#article-title {
     margin-top: 48px;
 }
 
-.topnav {
-    background-color: #c76b98;
-    overflow: hidden;
+h2 {
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-top: 48px;
 }
 
-.topnav a {
-    float: left;
+p {
+    line-height: 1.25;
+    margin-bottom: 1.25em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: none;
+}
+
+figure {
+    margin: 0;
+    padding: 12px;
+    padding-bottom: 24px;
+}
+
+@media all and (min-width: 768px) {
+    figure img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 12px;
+    }
+}
+
+@media all and (min-width: 768px) {
+    figure.section-image {
+        max-width: 320px;
+        float: right;
+        margin: -20px -62px 32px 20px;
+    }
+}
+
+img { 
+    width: auto;
+    height: auto;
+}
+
+p img {
+    float: right;
+    max-width: 60%;
+    margin-left: 20px;
+    margin-bottom: 32px;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+@media all and (min-width: 376px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+nav ul li {
+
+}
+
+nav ul li a {
+    background-color: #c76b98;
+    text-decoration: none;
+    padding: 14px 16px;
     display: block;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    overflow: hidden;
+    float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+
 }
 
-.topnav a:hover {
+header nav ul li a:hover {
     background-color: #ddd;
     color: black;
 }
 
-.topnav a.active {
+header nav ul li a.active {
     background-color: #270f36;
     color: white;
 }
 
-.topnav .icon {
-    display: none;
+header nav ul {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+footer nav {
+
+}
+
+footer nav ul li a {
+    color: white;
+}
+
+footer nav ul a:hover {
+    text-decoration: underline;
+}
+
+@media all and (min-width: 376px) {
+    footer#page-footer {
+        padding: 32px 0;
+        margin-top: 64px;
+        text-align: center;
+        background-color: #1C304A;
+        color: white;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.left-column {
+    float: left;
+    width: 75%;
+    padding-left: 20px;
+}
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
 }
